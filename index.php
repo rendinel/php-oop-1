@@ -31,6 +31,10 @@ class Garage {
     public function getCars() {
         return $this->firstfloor;
     }
+
+    public function getModel() {
+        return $this->model;
+    }
 }
 
 $rx7 = new Auto('Maxda','Rx-7','176kw');
@@ -43,3 +47,4 @@ $parking->addCar($r33);
 $parking->addCar($gt3000);
 
 print_r($parking->getCars());
+print_r($rx7->getModel());
