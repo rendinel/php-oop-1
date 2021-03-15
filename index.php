@@ -19,12 +19,13 @@ class Garage {
 
     private $firstfloor = [];
 
-    public function __ construct($name){
+    public function __construct($name){
         $this->name = $name;
+        $this->firstfloor = $firstFloor;
     }
 
     public function addCar(Auto $Firstfloor){ 
-        $this->firstfloor[] = $ff;
+        $this->firstfloor[] = $FirstFloor;
     }
 
     public function getCars() {
@@ -38,5 +39,7 @@ $gt3000 = new Auto('Mitsubishi','3000 gt', '221');
 
 $parking = new Garage('Pimo Piano');
 $parking->addCar($rx7);
+$parking->addCar($r33);
+$parking->addCar($gt3000);
 
 print_r($parking->getCars());
